@@ -1,0 +1,25 @@
+# Ignore wordpress core files
+core/*
+!core/.gitkeep
+
+# Ignore project dependencies
+vendor/*
+!vendor/.gitkeep
+
+# Git authentication data
+auth.json
+
+# Ignore database configuration
+!config/db.php
+
+# Needed to run wordpress
+resources/themes/*
+!resources/themes/.gitkeep
+
+# Ignore wordpress upgrades
+resources/upgrade/*
+!resources/upgrade/.gitkeep
+
+
+# Ignore htaccess
+.htaccess

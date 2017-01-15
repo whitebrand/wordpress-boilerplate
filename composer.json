@@ -1,0 +1,41 @@
+{
+    "name": "whitebrand/wordpress-boilerplate",
+    "description": "Wordpress Boilerplate",
+    "type": "project",
+    "authors": [
+        {
+            "name": "White Brand",
+            "email": "whitebrand@example.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "whitebrand/wp-routes",
+                "version": "0.1",
+                "dist": {
+                    "url": "https://github.com/whitebrand/wp-routes/archive/master.zip",
+                    "type": "zip"
+                }
+            }
+        }
+    ],
+    "require": {
+        "johnpbloch/wordpress-core-installer": "0.2.1",
+        "johnpbloch/wordpress": "4.7.1",
+        "whitebrand/wp-routes": "0.1"
+    },
+    "extra": {
+        "wordpress-install-dir": "core"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        },
+        "files": [
+            "vendor/wordpress/wordpress/wp-blog-header.php",
+            "vendor/lucatume/wp-routes/wp-routes.php"
+        ]
+    }
+}
