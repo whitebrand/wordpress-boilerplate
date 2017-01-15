@@ -4,14 +4,14 @@
  * Require composer dependencies autoloader
  *
  */
-require __BASE_DIR__ . '/vendor/autoload.php';
+require APP_BASE_DIR . '/vendor/autoload.php';
 
 /*
  * Define routes
  *
  */
-require __BASE_DIR__ . '/routes/web.php';
-require __BASE_DIR__ . '/routes/api.php';
+require APP_BASE_DIR . '/routes/web.php';
+require APP_BASE_DIR . '/routes/api.php';
 
 /*
  * Hooks
