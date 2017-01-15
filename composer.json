@@ -34,8 +34,7 @@
             "App\\": "app/"
         },
         "files": [
-            "vendor/wordpress/wordpress/wp-blog-header.php",
-            "vendor/lucatume/wp-routes/wp-routes.php"
+            "vendor/whitebrand/wp-routes/wp-routes.php"
         ]
     }
 }

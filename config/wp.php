@@ -20,27 +20,35 @@ define('NONCE_SALT',       'put your unique phrase here');
 
 /**#@-*/
 
-
 /**
- * For developers: WordPress debugging mode.
- *
- * Change this to true to enable the display of notices during development.
- * It is strongly recommended that plugin and theme developers use WP_DEBUG
- * in their development environments.
- *
- * For information on other constants that can be used for debugging,
- * visit the Codex.
- *
- * @link https://codex.wordpress.org/Debugging_in_WordPress
- */
-define('WP_DEBUG', APP_ENV == 'development' );
-
-/**
- * Sets home url
+ * Environment only constant configuration
  */
 if( APP_ENV == 'development' ) {
+    /**
+     * Enable error reporting
+     */
+    error_reporting(E_ALL);
+    ini_set('display_errors', 1);
+
+    /**
+     * Enable wordpress debugging
+     */
+    define('WP_DEBUG', true );
+
+    /**
+     * Sets home url
+     */
     define( 'WP_HOME', 'http://localhost/wordpress-boilerplate' );
+
 } else {
+    /**
+     * Disable wordpress debugging
+     */
+    define('WP_DEBUG', false );
+
+    /**
+     * Sets home url
+     */
     define( 'WP_HOME', 'http://' . $_SERVER['HTTP_HOST'] );
 }
 

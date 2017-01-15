@@ -6,7 +6,7 @@
 define( 'APP_ENV', 'development' );
 
 define( 'APP_NAMESPACE', 'app' );
-define( 'APP_PREFIX', __APP_NAMESPACE__ . '_' );
+define( 'APP_PREFIX', APP_NAMESPACE . '_' );
 
 define( 'APP_BASE_DIR', dirname( dirname( __FILE__ ) ) );
 define( 'APP_BASE_URL', 'http://' . $_SERVER['HTTP_HOST'] . '/wordpress-boilerplate' );
