@@ -19,8 +19,3 @@ require dirname( __FILE__ ) . '/config/wp.php';
  * Sets up WordPress vars and included files.
  */
 require_once( ABSPATH . 'wp-settings.php' );
-
-/**
- * Sets theme folder
- */
-register_theme_directory( APP_VIEWS_DIR );

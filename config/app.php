@@ -16,7 +16,7 @@ define( 'APP_CORE_DIR', APP_BASE_DIR . '/core' );
 define( 'APP_RESOURCES_DIR', APP_BASE_DIR . '/resources' );
 define( 'APP_RESOURCES_URL', APP_BASE_URL . '/resources' );
 
-define( 'APP_VIEWS_DIR', APP_RESOURCES_DIR . '/views' );
+define( 'APP_VIEWS_DIR', APP_RESOURCES_DIR . '/themes' );
 
 define( 'APP_PLUGINS_DIR', APP_RESOURCES_DIR . '/plugins' );
 define( 'APP_PLUGINS_URL', APP_RESOURCES_URL . '/plugins' );
